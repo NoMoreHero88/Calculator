@@ -123,6 +123,7 @@ const equalBut = document.querySelector('#equal');
 const currentInput = document.querySelector('#currentInputDisp');
 const resultDisplay = document.querySelector('#resultDisplay');
 
+
 equalBut.addEventListener('click', getResult);
 
 function getResult(){

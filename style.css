@@ -8,21 +8,46 @@ body{
     display:flex;
     flex-direction: column;
     width: 300px;
-    height: 500px;
+    min-height: 500px;
     border:solid;
+    background-color: rgb(59, 231, 37);
+    border-radius: 25px;
+    margin-top: 10%;
 }
 
 #dispHolder{
-    height: 100px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    margin: 15px;
+    border: solid;
+    background-color: lightgray;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    flex: 1;
 }
 
-#display{
-    border:solid;
-    height: 90%;
-    width: 90%;
+#currentInputDisp{
+    font-size: 30px;
+    display: flex;
+    text-align: right;
+}
+
+#resultDisplay{
+    font-size: 60px;
+    display: flex;
+    text-align: right;
+
+}
+
+#clearDelHolder{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 10%;
+    gap: 10px;
+    margin-right: 15px;
 }
 
 #keys{
@@ -30,4 +55,31 @@ body{
     grid-template-columns: repeat(4,1fr);
     column-gap:10px;
     row-gap: 10px;
+    margin: 10px 15px;
+    height: 250px;
+
+}
+
+.operator,
+#equal
+{
+    background-color: rgb(58, 204, 240);
+}
+
+button{
+    border-radius: 10px;
+    border: solid;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.clearDel button{
+    height: 35px;
+    width: 70px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+html{
+    background-color: rgba(0, 0, 0, 0.76);
 }
